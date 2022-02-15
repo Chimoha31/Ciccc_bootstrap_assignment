@@ -27,11 +27,58 @@
     <title>Catcademy</title>
   </head>
   <body>
+    <!---------------------
+         nav    
+    ---------------------->
+    <header class="bg-dark">
+      <div class="nav-container mg-5 d-flex justify-content-between">
+        <div>
+          <p class="fs-5 text-white m-3 ms-5">Catcademy</p>
+        </div>
+        <div>
+          <ul class="nav justify-content-end m-3 me-5">
+            <li class="nav-item">
+              <a class="nav-link text-secondary" aria-current="page" href="#"
+                >Learning Journey</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-secondary" href="#">FAQ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-secondary" href="#">Instructors</a>
+            </li>
+          </ul>
+        </div>
+      </div>
 
+      <!---------------------
+          header img
+        ---------------------->
+      <div class="container d-flex justify-content-around">
+        <div class="p-5 d-flex flex-column justify-content-around">
+          <div>
+            <h5 class="display-4 text-white">
+              Become a <span class="text-warning">Cat</span>
+            </h5>
+            <p class="lead text-white">
+              Nap all day cat dog hate mouse wat string barf pillow no baths
+              hate everything, but kitty poochy. Sleep on keyboard toy mouse
+              squeak roll over.
+            </p>
+            <a href="" class="btn btn-primary btn-lg">Start The Enrollment</a>
+          </div>
+        </div>
+
+        <div>
+          <img src="img/sushi.png" />
+        </div>
+      </div>
+    </header>
 
     <!-- to display the map -->
     <div id="map"></div>
-  
+
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
       integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp"
@@ -44,10 +91,12 @@
     ></script>
     <script src="https://api.mapbox.com/mapbox.js/v3.3.1/mapbox.js"></script>
     <script>
-        L.mapbox.accessToken = 'pk.eyJ1IjoiYnRyYXZlcnN5IiwiYSI6ImNrbmh0dXF1NzBtbnMyb3MzcTBpaG10eXcifQ.h5ZyYCglnMdOLAGGiL1Auw';
-        var map = L.mapbox.map('map')
-            .setView([33.7362, 132.4818], 14)
-            .addLayer(L.mapbox.styleLayer('mapbox://styles/mapbox/streets-v11'));
-        </script>
+      L.mapbox.accessToken =
+        "pk.eyJ1IjoiYnRyYXZlcnN5IiwiYSI6ImNrbmh0dXF1NzBtbnMyb3MzcTBpaG10eXcifQ.h5ZyYCglnMdOLAGGiL1Auw";
+      var map = L.mapbox
+        .map("map")
+        .setView([33.7362, 132.4818], 14)
+        .addLayer(L.mapbox.styleLayer("mapbox://styles/mapbox/streets-v11"));
+    </script>
   </body>
 </html>
